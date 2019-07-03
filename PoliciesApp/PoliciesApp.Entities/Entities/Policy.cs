@@ -15,8 +15,7 @@ namespace PoliciesApp.Entities.Entities
         public double Price { get; set; }
         public RiskType RiskType { get; set; }
 
-        public int CustomerId { get; set; }
-        public virtual Customer Customer { get; set; }
+        public virtual List<Customer> Customers { get; set; }
         public virtual List<CoverageType> CoverageTypes { get; set; }
     }
 }

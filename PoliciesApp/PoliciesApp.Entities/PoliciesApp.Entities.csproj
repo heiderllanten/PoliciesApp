@@ -61,6 +61,10 @@
     <Compile Include="Migrations\201907030323537_Updating_Policies_and_Coverage_Type_Relation.Designer.cs">
       <DependentUpon>201907030323537_Updating_Policies_and_Coverage_Type_Relation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907032329051_Updating_Relation_Between_Customers_And_Policies.cs" />
+    <Compile Include="Migrations\201907032329051_Updating_Relation_Between_Customers_And_Policies.Designer.cs">
+      <DependentUpon>201907032329051_Updating_Relation_Between_Customers_And_Policies.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -74,6 +78,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201907030323537_Updating_Policies_and_Coverage_Type_Relation.resx">
       <DependentUpon>201907030323537_Updating_Policies_and_Coverage_Type_Relation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907032329051_Updating_Relation_Between_Customers_And_Policies.resx">
+      <DependentUpon>201907032329051_Updating_Relation_Between_Customers_And_Policies.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
