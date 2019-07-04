@@ -2,17 +2,14 @@
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
+using Unity.Attributes;
 
 namespace PoliciesApp.Repositories.Infraestructure
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        internal DbContext _context;
-
-        public GenericRepository(DbContext context)
-        {
-            _context = context;
-        }
+        [Dependency]
+        public DbContext _context { get; set; }
 
         public void Add(T entity)
         {

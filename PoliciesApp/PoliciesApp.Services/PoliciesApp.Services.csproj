@@ -41,7 +41,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract\ICoverageTypeService.cs" />
+    <Compile Include="Contract\ICustomerService.cs" />
+    <Compile Include="Contract\IPolicyService.cs" />
+    <Compile Include="Implementation\CoverageTypeService.cs" />
+    <Compile Include="Implementation\CustomerService.cs" />
+    <Compile Include="Implementation\PolicyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PoliciesApp.Entities\PoliciesApp.Entities.csproj">
+      <Project>{40a142f9-409f-4f81-b46a-b753d90a7fb1}</Project>
+      <Name>PoliciesApp.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PoliciesApp.Repositories\PoliciesApp.Repositories.csproj">
+      <Project>{d1b7f4c3-a2b1-432c-85f0-ebe53c503fb0}</Project>
+      <Name>PoliciesApp.Repositories</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
